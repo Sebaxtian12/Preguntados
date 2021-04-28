@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "636585814986",
+    "firebase_url": "https://reprofunab.firebaseio.com",
+    "project_id": "reprofunab",
+    "storage_bucket": "reprofunab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636585814986:android:5bd26d00332ff247063d33",
+        "android_client_info": {
+          "package_name": "co.edu.unab.parra.cristian.reprofunab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636585814986-tnhhv5nc4nt58uc9pl0f1m97cgfa8au6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFdXw5f9p8qWmsPDQPIQxBghytO1wN1dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636585814986-tnhhv5nc4nt58uc9pl0f1m97cgfa8au6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

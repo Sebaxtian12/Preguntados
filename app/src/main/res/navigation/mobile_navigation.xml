@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/inicio">
+
+    <fragment
+        android:id="@+id/inicio"
+        android:name="co.edu.unab.parra.cristian.reprofunab.Fragments.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+
+    android:id="@+id/categoria"
+        android:name="co.edu.unab.parra.cristian.reprofunab.Fragments.TitleFragment"
+        android:label="Títulos"
+        tools:layout="@layout/fragment_titles">
+        <action
+            android:id="@+id/action_categoria_to_inicio"
+            app:destination="@id/inicio"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/inicio"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/examen"
+        android:name="co.edu.unab.parra.cristian.reprofunab.Fragments.PreExamenFragment"
+        android:label="Examen rápido"
+        tools:layout="@layout/fragment_exameninicio" />
+
+
+
+    <fragment
+        android:id="@+id/configuracion"
+        android:name="co.edu.unab.parra.cristian.reprofunab.Fragments.ConfigFragment"
+        android:label="Configuración"
+        tools:layout="@layout/configactivity" />
+
+
+    <fragment
+        android:id="@+id/acerca"
+        android:name="co.edu.unab.parra.cristian.reprofunab.Fragments.AcercaFragment"
+        android:label="Acerca de"
+        tools:layout="@layout/fragment_acerca" />
+
+
+
+</navigation>

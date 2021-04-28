@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="Configuraciones">
+
+        <androidx.preference.PreferenceCategory
+            android:title="Notificaciones"
+            android:textSize="20dp"
+            android:icon="@drawable/ic_notificaciones">
+
+            <androidx.preference.SwitchPreference
+                android:defaultValue="true"
+                android:key="@string/preference_sound"
+                android:summary="summary_vibrate"
+                android:title="Sonido" />
+
+            <androidx.preference.CheckBoxPreference
+                android:defaultValue="false"
+                android:key="@string/preference_vibration"
+                android:summaryOff="Habilitar la vibración de las notificaciones"
+                android:title="Vibración" />
+
+
+        </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="Presentación"
+        android:textSize="20dp"
+        android:icon="@drawable/ic_darkmode">
+
+        <Preference
+            android:key="transicion"
+            android:fragment="co.edu.unab.parra.cristian.reprofunab.Fragments.PreExamenFragment"
+            android:title="Transición" />
+
+
+        <androidx.preference.ListPreference
+            android:entries="@array/themes_entries"
+            android:entryValues="@array/themes_values"
+            android:key="theme"
+            android:defaultValue="Light"
+            android:title="@string/theme"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/startscreens"
+            android:entryValues="@array/startscreens_values"
+            android:key="@string/preference_start_screen"
+            android:title="@string/startscreen"
+            app:useSimpleSummaryProvider="true" />
+
+    </androidx.preference.PreferenceCategory>
+
+        <androidx.preference.PreferenceCategory android:title="Sobre" android:textSize="20dp">
+
+            <androidx.preference.Preference
+                android:persistent="false"
+                android:selectable="false"
+                android:key="pref_app_version"
+                android:title="Versíon de la aplicación" />
+
+            <co.edu.unab.parra.cristian.reprofunab.Adapters.Opensource
+                android:key="@string/preference_license"
+                android:title="@string/licenses" />
+
+
+
+            You can do it directly from preferences:
+
+            <Preference
+                android:key="contactDevKey"
+                android:summary="Para reportar bugs o sugerir nuevas caracteristicas"
+                android:title="Contáctanos">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="@string/contact_developer_uri"/>
+                <extra android:name="android.intent.extra.TEXT"
+                    android:value="¿Cómo podemos ayudarte?" />
+                <extra android:name="android.intent.extra.SUBJECT"
+                    android:value="Request - ReprofUnab App" />
+            </Preference>
+
+
+            <!-- preference opens url in browser -->
+            <androidx.preference.Preference
+                android:summary="Si la aplicación ha sido de tu agrado, por favor dejanos una reseña en la Play Store"
+                android:title="Escribe una reseña">
+                <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="http://play.google.com/store/apps/detailse?id=com.miguel.busunab.busunabmapa" />
+            </androidx.preference.Preference>
+
+            <Preference
+                android:key="shareapp"
+                android:summary="Por el medio que prefieras"
+                android:title="Compartir App">
+            </Preference>
+
+        </androidx.preference.PreferenceCategory>
+
+
+</androidx.preference.PreferenceScreen>

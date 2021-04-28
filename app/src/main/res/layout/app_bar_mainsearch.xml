@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="#373737"
+            android:fitsSystemWindows="true"
+            android:background="@color/bgcolor"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        <Button
+            android:id="@+id/showSearchBarButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/ic_menu_search"
+            android:layout_marginEnd="10dp"
+            android:onClick="showSearchBox"/>
+
+        <Button
+            android:id="@+id/hideSearchBarButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/close_icon"
+            android:layout_marginRight="10dp"
+            android:onClick="hideSearchBox"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/searchStringInputField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHighlight="@color/colorPrimary"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:backgroundTint="@color/white"
+            android:singleLine="true"
+            android:textCursorDrawable = "@null"
+            android:visibility="gone"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:autofillHints="" />
+
+</androidx.appcompat.widget.Toolbar>

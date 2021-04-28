@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/inicio"
+            android:icon="@drawable/home"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/categoria"
+            android:icon="@drawable/categoria"
+            android:title="@string/categor_as" />
+        <item
+            android:id="@+id/examen"
+            android:icon="@drawable/examen"
+            android:title="@string/examen_r_pido" />
+        <item
+            android:id="@+id/ayuda"
+            android:icon="@drawable/ayuda"
+            android:title="@string/ayuda_e_inquietudes" />
+
+    </group>
+    <group  android:id="@+id/group2" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/configuracion"
+            android:icon="@drawable/configuracion"
+            android:title="@string/configuraci_n" />
+        <item
+            android:id="@+id/calificanos"
+            android:icon="@drawable/calificanos"
+            android:title="@string/calif_canos" />
+        <item
+            android:id="@+id/acerca"
+            android:icon="@drawable/acerca"
+            android:title="@string/acerca_de" />
+    </group>
+</menu>

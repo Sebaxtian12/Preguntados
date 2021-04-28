@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   color for the app bar and other primary UI elements -->
+    <color name="colorPrimary">#fb8c00</color>
+
+    <!--   a darker variant of the primary color, used for
+           the status bar (on Android 5.0+) and contextual app bars -->
+    <color name="colorPrimaryDark">#b6b8c3</color>
+
+    <color name="bgcolor">#f5f5f5</color>
+    <color name="bgcolorhigh">#EDEBEB</color>
+    <!--   a secondary color for controls like checkboxes and text fields -->
+    <color name="colorAccent">#ffe082</color>
+    <color name="black">#1C1C1A</color>
+    <color name="white">#FFFFFF</color>
+    //Color timer
+    <color name="transparent_white">#9E888887</color>
+    //Color radio buttons
+    <color name="t_bg">#6DE4E4E0</color>
+    <color name="t_bg2">#3CA1A19D</color>
+
+
+    //drawer style
+
+
+    <color name="bgalertdheader">#F5F8FA</color>
+
+    <color name="trasparent">#00000000</color>
+    <color name="drawer_background_pres">#94FBE5CC</color>
+    <color name="drawer_background_sel">#5BE4D1B4</color>
+    <color name="dark_drawer">#757575</color>
+    <color name="drawer_highlight">#fb8c00</color>
+    <color name="drawer_checked">#D30909</color>
+
+
+
+    //theme
+
+
+
+    <color name="dark_mode_color">#0D0D0D</color>
+    <color name="light_mode_color">#E3E3E3</color>
+    <color name="light_mode_oval">#E3E3E3</color>
+    <color name="dark_mode_oval">#D20D0D0D</color>
+    <color name="dark_cell_color">#1E2834</color>
+    <color name="dark_view_color">#2E3D50</color>
+    <color name="light_view_color">#D1D1D1</color>
+    <color name="color_light_gray">#D3D3D3</color>
+    <color name="red">#F44336</color>
+    <color name="bgColor">#F2F3F8</color>
+    <color name="primaryCardColor">#EAFCFE</color>
+    <color name="transparent">#00000000</color>
+
+
+
+    <color name="darkModeBackground">#3E3D3C</color>
+    <color name="lightModeBackground">#FFF8E1</color>
+
+    <color name="background_light_primary">#f3f3f3</color>
+    <color name="background_light_primary_translucent">#CCf3f3f3</color>
+    <color name="background_light_secondary">@android:color/white</color>
+    <color name="background_light_tertiary">#d4d4d4</color>
+    <color name="background_dark_primary">#313131</color>
+    <color name="background_dark_primary_translucent">#CC313131</color>
+    <color name="background_dark_secondary">#424242</color>
+    <color name="background_dark_tertiary">#5C5C5C</color>
+
+    <color name="primary">@color/bgcolor</color>
+    <color name="translucent_scrim_end">#58000000</color>
+    <color name="translucent_scrim_center">#3F000000</color>
+
+    <color name="semitransparent">#ccf3f3f3</color>
+    <color name="semitransparent_lighter">#11ffffff</color>
+    <color name="semitransparent_light">#99ffffff</color>
+    <color name="semitransparent_dark">#11000000</color>
+
+</resources>

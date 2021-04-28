@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="radio_group" type="id" />
+    <item name="radio_button1" type="id" />
+    <item name="radio_button2" type="id" />
+    <item name="radio_button3" type="id" />
+    <item name="button_confirmar" type="id" />
+    <item name="tv_contadorpregunta" type="id" />
+    <item name="tv_verpuntuacion" type="id" />
+    <item name="tv_temporizador" type="id" />
+    <item name="tv_pregunta" type="id" />
+    <item name="flecha" type="id" />
+</resources>

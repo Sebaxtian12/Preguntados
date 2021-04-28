@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Activities.ExamenActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/scoreboard"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="90dp"
+        android:background="#CDDC39"
+        android:backgroundTint="#FFEB3B"
+        android:gravity="center">
+
+        <com.yy.mobile.rollingtextview.RollingTextView
+            android:id="@+id/tv_verpuntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:gravity="center"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1"
+            android:text="@string/verpuntua"
+            android:textColor="#1d1d1d"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/textpregunta"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="120dp">
+
+        <TextView
+            android:id="@+id/tv_contadorpregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contadorpreg"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp">
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="30"
+                    android:progressDrawable="@drawable/circular_progress_drawable"
+                    android:rotation="270"
+                    android:secondaryProgress="0" />
+
+                <TextView
+                    android:id="@+id/tv_temporizador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardpregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/scoreboard"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sombrabg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/preg"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:id="@+id/toolbar" />
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radio_groupexamen"
+        android:layout_below="@id/cardpregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_bg_blanco"
+            android:checked="false"
+            android:textSize="12sp"
+            android:text="@string/op1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/t_bg2">
+
+            <TextView
+                android:id="@+id/tev1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/pregunta"
+                android:textSize="15sp"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:background="@drawable/rounded_bg_blanco"
+            android:text="@string/op2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/t_bg2">
+
+            <TextView
+                android:id="@+id/tev2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/pregunta"
+                android:textSize="15sp"
+                android:textAppearance="?android:attr/textAppearanceListItem"/>
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:background="@drawable/rounded_bg_blanco"
+            android:text="@string/op3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/t_bg2">
+
+
+            <TextView
+                android:id="@+id/tev3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/pregunta"
+                android:textSize="15sp"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_groupexamen"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="144dp"
+        android:backgroundTint="#4F5C51"
+        android:text="@string/btn_examen" />
+</RelativeLayout>

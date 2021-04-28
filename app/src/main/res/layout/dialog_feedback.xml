@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/sombrabg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="@string/feedback"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/edt_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/degradado"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:gravity="start"
+                    android:hint="@string/feedback_hint"
+                    android:maxLines="4"
+                    android:minLines="8"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:autofillHints="0"
+                    tools:ignore="TextFields" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="@style/TextAppearance.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/ripple_buttongray"
+                    android:text="@string/cancelar"
+                    android:textColor="@color/dark_drawer"
+                    android:textSize="16sp"
+                    app:backgroundTint="@null"
+                    android:layout_centerInParent="true"/>
+
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    style="@style/TextAppearance.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/ripple_buttonorange"
+                    android:text="@string/enviar"
+                    android:textColor="@color/drawer_highlight"
+                    android:textSize="16sp"
+                    app:backgroundTint="@null"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

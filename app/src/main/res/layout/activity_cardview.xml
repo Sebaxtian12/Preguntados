@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+
+        android:layout_gravity="center"
+        android:id="@+id/card_titulo"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCardContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="385dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/imagen"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@drawable/tit1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNombre"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/t_tulos" />
+
+                <TextView
+                    android:id="@+id/txtDescripcion"
+                    style="@style/TextAppearance.MaterialComponents.Body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:justificationMode="inter_word"
+                    android:text="@string/textview1" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonocultar"
+                        style="@style/TextAppearance.MaterialComponents.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/ripple_buttongray"
+                        android:text="@string/ocultar"
+                        android:focusable="true"
+                        android:textColor="@color/dark_drawer"
+                        android:textSize="16sp"
+                        app:backgroundTint="@null" />
+
+
+                    <Button
+                        android:id="@+id/buttonver"
+                        style="@style/TextAppearance.MaterialComponents.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="130dp"
+                        android:background="@drawable/ripple_buttonorange"
+                        android:focusable="true"
+                        android:text="@string/examinar"
+                        android:textColor="@color/drawer_highlight"
+                        android:textSize="16sp"
+                        app:backgroundTint="@null" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

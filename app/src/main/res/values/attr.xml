@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorStateNavigationItem" format="color" />
+    <attr name="colorNavigationItemNormal" format="color"/>
+    <attr name="colorNavigationItemSelected" format="color" />
+    <attr name="colorNavigationItemBackgroundPressed" format="color" />
+    <attr name="colorNavigationItemBackgroundSelected" format="color" />
+    <attr name="drawableNavigationItemBackground" format="reference" />
+
+    //Theme support
+    <attr name="backgroundColorGreen" format="color"/>
+    <attr name="backgroundColorGreenDark" format="color"/>
+    <attr name="backgroundColorGreenTranslucent" format="color"/>
+    <attr name="backgroundColorPrimary" format="color"/>
+    <attr name="backgroundColorPrimaryTranslucent" format="color"/>
+    <attr name="backgroundColorSecondary" format="color"/>
+    <attr name="backgroundColorSecondaryInverse" format="color"/>
+    <attr name="backgroundColorTertiary" format="color"/>
+    <attr name="backgroundColorTertiaryInverse" format="color"/>
+    <attr name="iconColorPrimary" format="color"/>
+    <attr name="iconColorSecondary" format="color"/>
+
+
+</resources>

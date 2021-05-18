@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="80dp"
         android:layout_marginTop="25dp"
-        android:text="@string/examentitle"
+        android:text="Examen"
         android:textColor="@android:color/black"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,8 +51,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="@string/record"
-            android:textSize="40sp" />
+            android:text="Puntuación record:"
+            android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -60,9 +60,9 @@
             android:id="@+id/tv_puntuacionalta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/sourcesanspro_regular"
-            android:layout_marginTop="14dp"
-            android:layout_marginStart="150dp"
             android:shadowColor="@color/colorPrimaryDark"
             android:shadowDx="1.5"
             android:shadowDy="1.5"
@@ -81,7 +81,7 @@
         android:layout_centerInParent="true"
         android:layout_below="@+id/tvscore"
         android:contentDescription="@string/irahora"
-        android:src="@drawable/playbutton" />
+        android:src="@drawable/play" />
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

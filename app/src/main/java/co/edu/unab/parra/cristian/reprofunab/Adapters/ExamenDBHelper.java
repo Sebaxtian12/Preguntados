@@ -35,7 +35,7 @@ public class ExamenDBHelper extends SQLiteOpenHelper {
                 PreguntasTable.COLUMN_RESPUESTA + " INTEGER," +
                 PreguntasTable.COLUMN_SUBOPCION1 + " TEXT," +
                 PreguntasTable.COLUMN_SUBOPCION2 + " TEXT, " +
-                PreguntasTable.COLUMN_SUBOPCION3 + " TEXT " + ")";
+                PreguntasTable.COLUMN_SUBOPCION3 + " TEXT " + ")" ;
         db.execSQL(SQL_CREATE_QUESTIONS_TABLE);
         LlenarPreguntasTable();
     }
@@ -45,15 +45,15 @@ public class ExamenDBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
     private void LlenarPreguntasTable() {
-        ExamenModel p1 = new ExamenModel("¿Cuál es el objetivo del reglamento del profesorado?", "A", "B", "C", 1, "Estimular y orientar el desarrollo humano y profesional para consolidar una comunidad científica y profesoral de excelencia en sus funciones", "Ser el reglamento consultado para trabajos academicos", "Ninguna de las anteriores");
+        ExamenModel p1 = new ExamenModel("Dada las siguientes opciones. Todo aspirante UNAB debe cumplir con:", "A", "B", "C", 3, "Una beca o cualquier garantía de que termine la carrera con éxito", "Un desempeño alto y certificado que demuestre sus aptitudes para pertenecer a la institución", "Cumplir con los tramites, ceñirse al modelo educativo y plan curricular");
         addPregunta(p1);
-        ExamenModel p2 = new ExamenModel("Es una responsabilidad de todo docente UNAB", "A", "B", "C", 3, "Notificar su asistencia diaria", "Hacer un reporte con el nombre de los estudiantes que no aprueban la materia", "Promover y desarrollar actividades investigativas en la institución");
+        ExamenModel p2 = new ExamenModel("La UNAB aceptara a todo solicitante que:", "A", "B", "C", 2, "Sea recomendado por un directivo o personal de la institución universitaria", "Cumpla con los requisitos de la ley y los establecidos por la institución durante el proceso de admisión", "No haya cancelado su proceso de admisión");
         addPregunta(p2);
-        ExamenModel p3 = new ExamenModel("Es una restricción para ser docente UNAB", "A", "B", "C", 2, "Ser extranjero y tener menos de 15 años de residencia", "Quien haya sido condenado por sentencia judicial a pena privativa de la libertad, excepto por delitos culposos", "Estar trabajando actualmente en otra universidad");
+        ExamenModel p3 = new ExamenModel("El aspirante admitido adquiere el rol de:", "A", "B", "C", 1, "Estudiante activo", "Personal UNAB", "Estudiante de pregrado UNAB");
         addPregunta(p3);
-        ExamenModel p4 = new ExamenModel("¿Cuál de las siguientes respuestas es uno de los objetivo de la evaluación docente?", "A", "B", "C", 2,  "Una actividad extracurricular de los estudiantes", "Elevar la cultura institucional y la calidad académica","Una actividad extracurricular de los estudiantes");
+        ExamenModel p4 = new ExamenModel("Una vez el aspirante sea admitido deberá:", "A", "B", "C", 3,  "Renovar su matrícula cada año ", "Renovar su matrícula cada final de semestre ","Renovar su matrícula según el crono grama académico");
         addPregunta(p4);
-        ExamenModel p5 = new ExamenModel("¿Qué le sucede al docente que incurrá en algunas de las faltas mencionadas en el reglamento?", "A", "B", "C", 1, "Se efectuará la cancelación de su contrato, ya sea laboral o de prestación de servicios", "Se dará inicio a un proceso legal por incumplir con lo estipulado en su contrato", "Será inhabilitado para ejercer docencia en cualquier institución de educación por un lapso de 20 años ");
+        ExamenModel p5 = new ExamenModel("Todo estudiante UNAB sea nacional o extranjero, deberá:", "A", "B", "C", 1, "Acatar las normas y reglamentos de la institución por encima de cualquier otra que no sobreexceda la constitución", "Acatar las normas de la institución siempre y cuando estas no contradigan las normas del lugar en donde el estudiante procede", "Acatar las normas del lugar donde proviene cada estudiante y la institución deberá ser flexible a cualquiera de ellas");
         addPregunta(p5);
     }
     private void addPregunta(ExamenModel pregunta) {

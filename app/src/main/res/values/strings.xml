@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">ReProfUnab</string>
-    <string name="txt_launch_reprof">ReProf Unab</string>
-    <string name="txt_launch_reglamento">Reglamento de profesores</string>
+    <string name="app_name">RE Unab</string>
+    <string name="txt_launch_reprof">RE Unab</string>
+    <string name="txt_launch_reglamento">Reglamento Estudiantil</string>
     <string name="title_activity_panel_lateral">PanelLateral</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -18,7 +18,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="inicio">Inicio</string>
     <string name="categor_as">Categorías</string>
-    <string name="examen_r_pido">Examen Rápido</string>
+    <string name="examen_r_pido">Examen</string>
     <string name="examen_intento">Intento</string>
     <string name="ayuda_e_inquietudes">Ayuda e inquietudes</string>
     <string name="configuraci_n">Configuración</string>
@@ -33,7 +33,7 @@
     <string name="grupo4">Grupo 4</string>
     <string name="grupo5">Grupo 5</string>
     <string name="grupo6">Grupo 6</string>
-    <string name="reglamento_de_profesores">Reglamento de profesores</string>
+    <string name="reglamento_de_profesores">Reglamento Estudiantil</string>
     <string name="detalles">Detalles</string>
     <string name="categoria">Categoria</string>
     <string name="textview1">TextView</string>
@@ -91,7 +91,7 @@
     <string name="op3">Opción 3</string>
     <string name="btn_examen">Confirmar</string>
     <string name="btn_nuevoexamen">Iniciar un nuevo examen</string>
-    <string name="examentitle">Examen rápido</string>
+    <string name="examentitle">Examen</string>
     <string name="record">Record: </string>
     <string name="pregunta">Pregunta</string>
     <string name="score">score</string>

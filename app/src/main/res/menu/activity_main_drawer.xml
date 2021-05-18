@@ -7,30 +7,20 @@
         <item
             android:id="@+id/inicio"
             android:icon="@drawable/home"
-            android:title="@string/inicio" />
+            android:title="Inicio" />
         <item
             android:id="@+id/categoria"
             android:icon="@drawable/categoria"
-            android:title="@string/categor_as" />
+            android:title="Estudio" />
         <item
             android:id="@+id/examen"
             android:icon="@drawable/examen"
-            android:title="@string/examen_r_pido" />
-        <item
-            android:id="@+id/ayuda"
-            android:icon="@drawable/ayuda"
-            android:title="@string/ayuda_e_inquietudes" />
+            android:title="Examen" />
+
 
     </group>
     <group  android:id="@+id/group2" android:checkableBehavior="single" >
-        <item
-            android:id="@+id/configuracion"
-            android:icon="@drawable/configuracion"
-            android:title="@string/configuraci_n" />
-        <item
-            android:id="@+id/calificanos"
-            android:icon="@drawable/calificanos"
-            android:title="@string/calif_canos" />
+
         <item
             android:id="@+id/acerca"
             android:icon="@drawable/acerca"

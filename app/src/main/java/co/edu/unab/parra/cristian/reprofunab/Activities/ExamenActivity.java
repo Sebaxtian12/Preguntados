@@ -37,7 +37,6 @@ public class ExamenActivity extends AppCompatActivity {
     public static final int TIMER = 30;
     private TextView tvPregunta;
     private RollingTextView tvScore;
-    private TextView tVContadorPreguntas;
     private TextView textViewCountDown;
     private RadioGroup rbGroup;
     private RadioButton rb1;
@@ -73,7 +72,6 @@ public class ExamenActivity extends AppCompatActivity {
 
         tvPregunta = findViewById(R.id.tv_pregunta);
         tvScore = findViewById(R.id.tv_verpuntuacion);
-        tVContadorPreguntas = findViewById(R.id.tv_contadorpregunta);
         textViewCountDown = findViewById(R.id.tv_temporizador);
         rbGroup = findViewById(R.id.radio_groupexamen);
         rb1 = findViewById(R.id.radio_button1);
@@ -125,7 +123,6 @@ public class ExamenActivity extends AppCompatActivity {
             tev3.setText(examenModelActual.getSubopcion3());
 
             PreguntaContador++;
-            tVContadorPreguntas.setText("Pregunta: " + PreguntaContador + "/" + PreguntasRestantes);
             respondido = false;
             Botonenviar.setText("Enviar");
             tiemporestante = COUNTDOWN_IN_MILLIS;
@@ -183,9 +180,9 @@ public class ExamenActivity extends AppCompatActivity {
         cuentaRegresiva.cancel();
 
         RadioButton rbSelected = findViewById(rbGroup.getCheckedRadioButtonId());
-        int answerNr = rbGroup.indexOfChild(rbSelected)+1;
-        int answerNr2 = rbGroup.indexOfChild(rbSelected);
-        int answerNr3 = rbGroup.indexOfChild(rbSelected)-1;
+        int answerNr = rbGroup.indexOfChild(rbSelected);
+        int answerNr2 = rbGroup.indexOfChild(rbSelected)-1;
+        int answerNr3 = rbGroup.indexOfChild(rbSelected)+1;
         if (answerNr == examenModelActual.getRespuesta()) {
             score++;
             tvScore.setText("" + score);

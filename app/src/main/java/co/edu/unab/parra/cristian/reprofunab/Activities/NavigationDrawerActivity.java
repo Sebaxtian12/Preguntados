@@ -59,7 +59,7 @@ public class NavigationDrawerActivity extends AppCompatActivity {
 
         // Passing each menu ID as a set of Ids because each
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.inicio, R.id.categoria, R.id.examen, R.id.ayuda, R.id.configuracion, R.id.acerca)
+                R.id.inicio, R.id.categoria, R.id.examen, R.id.acerca)
                 .setOpenableLayout(drawerLayout) //Has change because .setDrawerLayout is deprecated
                 .build();
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
@@ -87,7 +87,7 @@ public class NavigationDrawerActivity extends AppCompatActivity {
                 boolean handled = NavigationUI.onNavDestinationSelected(item, navCo);
 
 
-                if (!handled) {
+                /*if (!handled) {
                     switch (item.getItemId()) {
                         case R.id.ayuda:
                             Log.i("NavigationView", "Pulsada opción 1");
@@ -136,7 +136,7 @@ public class NavigationDrawerActivity extends AppCompatActivity {
                         default:
                             throw new IllegalArgumentException("menu option not implemented!!");
                     }
-                }
+                }*/
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return handled;
             }

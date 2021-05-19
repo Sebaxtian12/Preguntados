@@ -21,9 +21,6 @@ public class ExamenDBHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-
-
-
         this.db = db;
         final String SQL_CREATE_QUESTIONS_TABLE = "CREATE TABLE " +
                 PreguntasTable.TABLE_NAME + " ( " +

@@ -16,18 +16,31 @@
         android:layout_height="331dp"
         android:layout_marginBottom="20dp"
         android:contentDescription="@string/txt_launch_reprof"
-        app:srcCompat="@drawable/logoapp" />
+        app:srcCompat="@drawable/unab1" />
 
     <TextView
         android:id="@+id/txt_reglamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
-        android:text="@string/reglamento_de_profesores"
+        android:layout_marginBottom="30dp"
+        android:text="@string/txt_titulo_inicio"
+        android:textAlignment="center"
         android:textColor="#F39B2D"
         android:textSize="24sp"
-        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_reglamento3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="-416dp"
         android:layout_marginBottom="30dp"
+        android:text="@string/txt_titulo_juego"
+        android:textAlignment="center"
+        android:textColor="#F39B2D"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <ProgressBar

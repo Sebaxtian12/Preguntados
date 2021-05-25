@@ -106,5 +106,7 @@
     <string name="licenses">Librerias Open Source</string>
     <string name="empty_feedback">¿Qué podemos mejorar?</string>
     <string name="imagenfd">imagen</string>
+    <string name="txt_titulo_inicio">Reglamento estudiantil-UNAB</string>
+    <string name="txt_titulo_juego">Juego de preguntas</string>
 
 </resources>

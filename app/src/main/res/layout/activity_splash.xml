@@ -16,7 +16,7 @@
         android:layout_height="331dp"
         android:layout_marginBottom="20dp"
         android:contentDescription="@string/txt_launch_reprof"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logoapp" />
 
     <TextView
         android:id="@+id/txt_reglamento"

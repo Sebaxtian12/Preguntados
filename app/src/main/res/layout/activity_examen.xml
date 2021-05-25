@@ -153,8 +153,8 @@
             android:layout_height="30dp"
             android:background="@drawable/rounded_bg_blanco"
             android:checked="false"
-            android:textSize="12sp"
-            android:text="@string/op1" />
+            android:text="@string/op1"
+            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -220,6 +220,34 @@
 
             <TextView
                 android:id="@+id/tev3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/pregunta"
+                android:textSize="15sp"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/radio_button4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_bg_blanco"
+            android:text="@string/op4"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/t_bg2">
+
+
+            <TextView
+                android:id="@+id/tev4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"

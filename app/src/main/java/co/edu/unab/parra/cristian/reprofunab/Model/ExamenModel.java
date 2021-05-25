@@ -4,23 +4,27 @@ public class ExamenModel {
     private String opcion1;
     private String opcion2;
     private String opcion3;
+    private String opcion4;
     private int respuesta;
     private String subopcion1;
     private String subopcion2;
     private String subopcion3;
+    private String subopcion4;
 
     public ExamenModel() {
     }
 
-    public ExamenModel(String pregunta, String opcion1, String opcion2, String opcion3, int respuesta, String subopcion1, String subopcion2, String subopcion3) {
+    public ExamenModel(String pregunta, String opcion1, String opcion2, String opcion3, String opcion4, int respuesta, String subopcion1, String subopcion2, String subopcion3, String subopcion4) {
         this.pregunta = pregunta;
         this.opcion1 = opcion1;
         this.opcion2 = opcion2;
         this.opcion3 = opcion3;
+        this.opcion4 = opcion4;
         this.respuesta = respuesta;
         this.subopcion1 = subopcion1;
         this.subopcion2 = subopcion2;
         this.subopcion3 = subopcion3;
+        this.subopcion4 = subopcion4;
     }
 
     public String getPregunta() {
@@ -55,6 +59,12 @@ public class ExamenModel {
         this.opcion3 = opcion3;
     }
 
+    public String getOpcion4() {
+        return opcion4;
+    }
+
+    public void setOpcion4(String opcion4) { this.opcion4 = opcion4; }
+
     public int getRespuesta() {
         return respuesta;
     }
@@ -85,6 +95,14 @@ public class ExamenModel {
 
     public void setSubopcion3(String subopcion3) {
         this.subopcion3 = subopcion3;
+    }
+
+    public String getSubopcion4() {
+        return subopcion4;
+    }
+
+    public void setSubopcion4(String subopcion4) {
+        this.subopcion4 = subopcion4;
     }
 
 }

@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
@@ -39,10 +40,12 @@ public class ExamenActivity extends AppCompatActivity {
     private RollingTextView tvScore;
     private TextView textViewCountDown;
     private RadioGroup rbGroup;
+    private RadioButton rbutton;
     private RadioButton rb1;
     private RadioButton rb2;
     private RadioButton rb3;
-    private TextView tev1, tev2, tev3;
+    private RadioButton rb4;
+    private TextView tev1, tev2, tev3, tev4;
     private Button Botonenviar;
     private ColorStateList textColorDefaultCd;
     private CountDownTimer cuentaRegresiva;
@@ -77,9 +80,11 @@ public class ExamenActivity extends AppCompatActivity {
         rb1 = findViewById(R.id.radio_button1);
         rb2 = findViewById(R.id.radio_button2);
         rb3 = findViewById(R.id.radio_button3);
+        rb4 = findViewById(R.id.radio_button4);
         tev1 = findViewById(R.id.tev1);
         tev2 = findViewById(R.id.tev2);
         tev3 = findViewById(R.id.tev3);
+        tev4 = findViewById(R.id.tev4);
         progress_bar = findViewById(R.id.progress_bar);
         Botonenviar = findViewById(R.id.button_confirmar);
         textColorDefaultCd = textViewCountDown.getTextColors();
@@ -94,7 +99,7 @@ public class ExamenActivity extends AppCompatActivity {
 
         Botonenviar.setOnClickListener(v -> {
             if (!respondido) {
-                if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked()) {
+                if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked() || rb4.isChecked()) {
                     checkRespuesta();
                 } else {
                     Toast.makeText(ExamenActivity.this, "Elija la respuesta correcta", Toast.LENGTH_SHORT).show();
@@ -111,6 +116,7 @@ public class ExamenActivity extends AppCompatActivity {
         rb1.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_blanco));
         rb2.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_blanco));
         rb3.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_blanco));
+        rb4.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_blanco));
         rbGroup.clearCheck();
         if (PreguntaContador < PreguntasRestantes) {
             examenModelActual = examenModelList.get(PreguntaContador);
@@ -118,9 +124,11 @@ public class ExamenActivity extends AppCompatActivity {
             rb1.setText(examenModelActual.getOpcion1());
             rb2.setText(examenModelActual.getOpcion2());
             rb3.setText(examenModelActual.getOpcion3());
+            rb4.setText(examenModelActual.getOpcion4());
             tev1.setText(examenModelActual.getSubopcion1());
             tev2.setText(examenModelActual.getSubopcion2());
             tev3.setText(examenModelActual.getSubopcion3());
+            tev4.setText(examenModelActual.getSubopcion4());
 
             PreguntaContador++;
             respondido = false;
@@ -176,23 +184,57 @@ public class ExamenActivity extends AppCompatActivity {
 
     }
     private void checkRespuesta() {
+
         respondido = true;
         cuentaRegresiva.cancel();
 
+        int b1, b2, b3, b4;
+
         RadioButton rbSelected = findViewById(rbGroup.getCheckedRadioButtonId());
-        int answerNr = rbGroup.indexOfChild(rbSelected);
-        int answerNr2 = rbGroup.indexOfChild(rbSelected)-1;
-        int answerNr3 = rbGroup.indexOfChild(rbSelected)+1;
-        if (answerNr == examenModelActual.getRespuesta()) {
-            score++;
-            tvScore.setText("" + score);
-        }if(answerNr2 == examenModelActual.getRespuesta()){
-            score++;
-            tvScore.setText("" + score);
-        }if (answerNr3 == examenModelActual.getRespuesta()){
-            score++;
-            tvScore.setText("" + score);
+        int radioButtonID = rbGroup.getCheckedRadioButtonId();
+        int answerNr = rbGroup.indexOfChild(rbSelected)+1;
+
+        if (radioButtonID == rb1.getId()) {
+            b1 = 1;
+            if (b1 == examenModelActual.getRespuesta()){
+                score++;
+                tvScore.setText("" + score);
+            }
+        }else if (radioButtonID == rb2.getId()) {
+            b2 = 2;
+            if (b2 == examenModelActual.getRespuesta()){
+                score++;
+                tvScore.setText("" + score);
+            }
+        }else if (radioButtonID == rb3.getId()) {
+            b3 = 3;
+            if (b3 == examenModelActual.getRespuesta()){
+                score++;
+                tvScore.setText("" + score);
+            }
+        }else if (radioButtonID == rb4.getId()) {
+            b4 = 4;
+            if (b4 == examenModelActual.getRespuesta()){
+                score++;
+                tvScore.setText("" + score);
+            }
         }
+
+        /*
+        if (b1 == examenModelActual.getRespuesta()) {
+            score++;
+            tvScore.setText("" + score);
+        }else if(b2 == examenModelActual.getRespuesta()){
+            score++;
+            tvScore.setText("" + score);
+        }else if (b3 == examenModelActual.getRespuesta()){
+            score++;
+            tvScore.setText("" + score);
+        }else if (b4 == examenModelActual.getRespuesta()){
+            score++;
+            tvScore.setText("" + score);
+        }*/
+
         showRespuesta();
     }
 
@@ -201,6 +243,7 @@ public class ExamenActivity extends AppCompatActivity {
         rb1.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_rojo));
         rb2.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_rojo));
         rb3.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_rojo));
+        rb4.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_rojo));
         switch (examenModelActual.getRespuesta()) {
             case 1:
                 rb1.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_verde));
@@ -213,6 +256,10 @@ public class ExamenActivity extends AppCompatActivity {
             case 3:
                 rb3.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_verde));
                 tvPregunta.setText("C es la respuesta correcta");
+                break;
+            case 4:
+                rb4.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_bg_verde));
+                tvPregunta.setText("D es la respuesta correcta");
                 break;
         }
         if (PreguntaContador < PreguntasRestantes) {

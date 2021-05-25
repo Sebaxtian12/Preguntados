@@ -490,18 +490,6 @@ public class Detalle extends AppCompatActivity {
             listItem.put(listGroup.get(5), list6);
         }
 
-//Titulo6
-
-        if (numero==6){
-            //Pregunta1
-            List<String> list1 = new ArrayList<>();
-            list1.add(" a) La Junta Directiva de la UNAB puede hacer modificaciones cuando hayan propuestas o proyectos conducentes presentados por el rector y el Vicerrector Académico.\n" +
-                    "   b) Bajo ninguna circunstancia este reglamento puede desmejorar la posición en el escalafón o el salario del profesor.\n" +
-                    "   c) Queda facultado únicamente el Rector para expedir resoluciones que fueren pertinentes.\n");
-            listItem.put(listGroup.get(0), list1);
-        }
-
-
         /*List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         List<String> list3 = new ArrayList<>();*/

@@ -39,7 +39,7 @@
                 android:layout_height="150dp"
                 android:contentDescription="@string/imagen"
                 android:scaleType="centerCrop"
-                tools:srcCompat="@drawable/tit1" />
+                tools:srcCompat="@drawable/titulo01" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -76,13 +76,14 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginBottom="5dp"
                         android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"
                         android:background="@drawable/ripple_buttongray"
-                        android:text="@string/ocultar"
                         android:focusable="true"
+                        android:text="@string/ocultar"
                         android:textColor="@color/dark_drawer"
                         android:textSize="16sp"
+                        android:visibility="invisible"
                         app:backgroundTint="@null" />
 
 

@@ -33,7 +33,7 @@
     <string name="grupo4">Grupo 4</string>
     <string name="grupo5">Grupo 5</string>
     <string name="grupo6">Grupo 6</string>
-    <string name="reglamento_de_profesores">Reglamento Estudiantil</string>
+    <string name="reglamento_de_profesores">Reglamento Estudiantil de Pregrado</string>
     <string name="detalles">Detalles</string>
     <string name="categoria">Categoria</string>
     <string name="textview1">TextView</string>
@@ -42,11 +42,11 @@
     <string name="imagen">Imagen</string>
     <string name="default_notification_channel_id">beta</string>
     <string name="detalle">Detalle</string>
-    <string name="reprof_unab">Reprof Unab</string>
-    <string name="acerca_info">Reglamento del Profesorado Unab</string>
-    <string name="acerca_info2">Esta aplicación es el resultado de la ardua investigación y posterior, desarrollo de software por parte de la startup de base tecnológica \'Los Quarks\'. El propósito de este proyecto es ser el medio predilecto de divulgación del reglamento de profesores de la Universidad Autónoma de Bucaramanga. Si esta aplicación fue útil y de su agrado, le invitamos a seguirnos en nuestras principales redes sociales, para estar al tanto de nuestros próximos proyectos.</string>
+    <string name="reprof_unab">RE Unab</string>
+    <string name="acerca_info">Reglamento Estudiantil de Pregrado de la Unab</string>
+    <string name="acerca_info2">Esta aplicación es el resultado de la ardua investigación y posterior, desarrollo de software por parte de la startup de base tecnológica \'The Boys\'. El propósito de este proyecto es ser el medio predilecto de divulgación del reglamento estudiantil de pregrado de la Universidad Autónoma de Bucaramanga. Si esta aplicación fue útil y de su agrado, le invitamos a seguirnos en nuestras principales redes sociales, para estar al tanto de nuestros próximos proyectos.</string>
     <string name="todo">TODO</string>
-    <string name="mensaje_bienvenida">Bienvenido al Reglamento del Profesorado Unab</string>
+    <string name="mensaje_bienvenida">Bienvenido al Reglamento Estudiantil de Pregrado de la Unab</string>
     <string name="info_bienvenida">En el menú de la izquierda podrás ver las Categorías y las Preguntas frecuentes para que ahorres tiempo</string>
     <string name="imagen_bienvenida">imagende bienvenida</string>
     <string name="titulo_pregunta">Titulo examenModel</string>
@@ -89,6 +89,7 @@
     <string name="op1">Opción 1</string>
     <string name="op2">Opción 2</string>
     <string name="op3">Opción 3</string>
+    <string name="op4">Opción 4</string>
     <string name="btn_examen">Confirmar</string>
     <string name="btn_nuevoexamen">Iniciar un nuevo examen</string>
     <string name="examentitle">Examen</string>

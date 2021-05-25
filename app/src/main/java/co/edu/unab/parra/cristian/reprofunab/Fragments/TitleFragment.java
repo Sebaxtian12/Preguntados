@@ -59,7 +59,6 @@ public class TitleFragment extends Fragment {
         ArrayList<String> preguntas3 = new ArrayList<>();
         ArrayList<String> preguntas4 = new ArrayList<>();
         ArrayList<String> preguntas5 = new ArrayList<>();
-        ArrayList<String> preguntas6 = new ArrayList<>();
 
         preguntas1.add("¿Cuál es el objetivo del Reglamento del profesorado?\n");
         preguntas1.add("¿Qué es el reglamento docente? (Definiciones)\n");
@@ -105,14 +104,12 @@ public class TitleFragment extends Fragment {
         preguntas5.add("Normatividad llevada a cabo en un procedimiento disciplinario\n");
         preguntas5.add("¿Cuales son los pasos a seguir para un procedimiento disciplinario?\n");
 
-        preguntas6.add("¿Cuándo y cómo se podría modificar el reglamento?\n");
 
-        elementos.add(new TitleModel(R.drawable.tit1, "1","Titulo 1" , "Definiciones, campo de aplicación, integración a los contratos",preguntas1));
-        elementos.add(new TitleModel(R.drawable.tit2, "2","Titulo 2" , "Perfil, selección,vinculación, categoria docentes, promoción y situaciones administrativas",preguntas2));
-        elementos.add(new TitleModel(R.drawable.tit3, "3","Titulo 3" , "Responsabilidades, derechos, prohibiciones, deberes, estimulos y distinciones, inhabilidades e incompatibilidades",preguntas3));
-        elementos.add(new TitleModel(R.drawable.tit4, "4","Titulo 4", "Seguimiento y evaluación del desempeño del profesor.", preguntas4));
-        elementos.add(new TitleModel(R.drawable.tit6, "5","Titulo 5" , "Regimen disciplinario: principios generales, faltas disciplinarias, procedimiento disciplinario y la gradación de sanciones",preguntas5));
-        elementos.add(new TitleModel(R.drawable.tit5, "6","Titulo 6" , "De la modificación, reglamentación y disposiciones transitorias y finales",preguntas6));
+        elementos.add(new TitleModel(R.drawable.titulo01, "1","Titulo 1" , "Definiciones, campo de aplicación, integración a los contratos",preguntas1));
+        elementos.add(new TitleModel(R.drawable.titulo02, "2","Titulo 2" , "Perfil, selección,vinculación, categoria docentes, promoción y situaciones administrativas",preguntas2));
+        elementos.add(new TitleModel(R.drawable.titulo03, "3","Titulo 3" , "Responsabilidades, derechos, prohibiciones, deberes, estimulos y distinciones, inhabilidades e incompatibilidades",preguntas3));
+        elementos.add(new TitleModel(R.drawable.titulo04, "4","Titulo 4", "Seguimiento y evaluación del desempeño del profesor.", preguntas4));
+        elementos.add(new TitleModel(R.drawable.titulo05, "5","Titulo 5" , "Regimen disciplinario: principios generales, faltas disciplinarias, procedimiento disciplinario y la gradación de sanciones",preguntas5));
 
     }
 

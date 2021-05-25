@@ -44,7 +44,7 @@ public class PreExamenFragment extends Fragment {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                rippleBackground.startRippleAnimation();
+                //rippleBackground.startRippleAnimation();
                 new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -52,7 +52,7 @@ public class PreExamenFragment extends Fragment {
                         startActivityForResult(intent, REQUEST_CODE_QUIZ);
                         rippleBackground.stopRippleAnimation();
                     }
-                }, 2000);
+                }, 500);
 
             }
         });

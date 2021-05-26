@@ -60,10 +60,23 @@ public class TitleFragment extends Fragment {
         ArrayList<String> preguntas4 = new ArrayList<>();
         ArrayList<String> preguntas5 = new ArrayList<>();
 
-        preguntas1.add("¿Cuál es el objetivo del Reglamento del profesorado?\n");
-        preguntas1.add("¿Qué es el reglamento docente? (Definiciones)\n");
-        preguntas1.add("¿Qué es un Docente UNAB y cuáles son sus características? (Definiciones y perfil del profesor UNAB)\n");
-        preguntas1.add("¿A quién aplica este Reglamento y desde qué momento? (Campo de aplicación e integración a los contratos)\n");
+        preguntas1.add("Admisiones:\n");
+        preguntas1.add("Pasos para la matrícula:\n");
+        preguntas1.add("El derecho a la renovación de matrícula se perderá por una de las siguientes causas:\n");
+        preguntas1.add("Solicitud de admisión por transferencia:\n");
+        preguntas1.add("Requisitos para la homologación:\n");
+        preguntas1.add("Condiciones académicas dentro de la UNAB: \n");
+        preguntas1.add("Estados académicos en la UNAB:\n");
+        preguntas1.add("¿Qué es el Currículo?\n");
+        preguntas1.add("¿Qué es el Plan de estudios?\n");
+        preguntas1.add("¿Qué son las Actividades académicas? \n");
+        preguntas1.add("¿Que es un Crédito?\n");
+        preguntas1.add("La escala de calificación en la UNAB \n");
+        preguntas1.add("Cálculo del PPA y PGA. \n");
+        preguntas1.add("Las Habilitaciones:\n");
+        preguntas1.add("Los objetivos de la práctica académica \n");
+        preguntas1.add("El trabajo de grado.\n");
+        preguntas1.add("Requisitos para obtener el título en estudios de pregrado: \n");
 
         preguntas2.add("Derechos de los estudiantes.\n");
         preguntas2.add("Deberes de los estudiantes\n");

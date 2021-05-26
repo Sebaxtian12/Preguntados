@@ -55,18 +55,4 @@
         app:srcCompat="@drawable/unabicono"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_link"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contextClickable="true"
-        android:linksClickable="true"
-        android:onClick='https://docs.google.com/forms/d/e/1FAIpQLSd3fou92K3rLtBTDfZ8rzy5F6mo2kVVk2rJ1-kK_X2XDiwLCw/viewform?usp=sf_link'
-        android:text="Calificanos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543"
-        tools:ignore="OnClick" />
 </androidx.constraintlayout.widget.ConstraintLayout>

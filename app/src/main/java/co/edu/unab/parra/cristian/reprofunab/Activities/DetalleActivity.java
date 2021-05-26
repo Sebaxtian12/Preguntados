@@ -92,30 +92,110 @@ public class DetalleActivity extends AppCompatActivity {
         if (numero==1){
             //Pregunta1
             List<String> list1 = new ArrayList<>();
-            list1.add("Estimular y orientar el desarrollo humano y profesional hacia el cumplimiento de su misión particular, para consolidar una comunidad científica y profesoral de excelencia en sus funciones. \n");
+            list1.add("-Todo aspirante a ingresar a la UNAB deberá cumplir, dentro de las fechas establecidas, los requisitos y trámites determinados por la Institución y ceñirse al modelo educativo y plan curricular vigentes. \n" +
+                    "-Quien no realice su matrícula en la fecha señalada, según el cronograma académico, podrá reservar cupo mediante solicitud formal al respectivo programa.\n\n");
             listItem.put(listGroup.get(0), list1);
             //Pregunta2
             List<String> list2 = new ArrayList<>();
-            list2.add("Es el conjunto de principios, valores y reglas básicas que rige la relación Universidad-profesores, donde se establecen las responsabilidades, derechos, deberes y lo referente a la carrera profesoral (perfil, selección, vinculación, remuneración, evaluación, promoción, inhabilidades, incompatibilidades, estímulos, distinciones y retiro.\n");
+            list2.add("-Inscribir los cursos en la plataforma académica institucional, de acuerdo con su plan de estudios y dentro de las fechas establecidas.\n" +
+                    "-Legalizar el pago de los créditos inscritos, más los derechos pecuniarios exigidos dentro de las fechas establecidas en el cronograma académico, y antes del inicio de clases.\n\n");
             listItem.put(listGroup.get(1), list2);
             //Pregunta3
             List<String> list3 = new ArrayList<>();
-            list3.add("Persona que desarrolla la actividad de docencia e investigación, consciente del importante rol que desempeña, vinculado a una Facultad Académica de la Universidad y cumplidor del Reglamento del profesorado, entre sus características particulares se destacan:\n\n" +
-                    "   a) Su preparación académica e idoneidad profesional.\n" +
-                    "   b) Su tolerancia y respeto a las ideas divergentes.\n" +
-                    "   c) Su creatividad y espíritu crítico.\n" +
-                    "   d) Su compromiso con los principios que definen la Visión y Misión de la Universidad.\n" +
-                    "   e) Sus habilidades pedagógicas para orientar los procesos de formación e instrucción del estudiante.\n" +
-                    "   f) Su capacidad para generar, desde la cátedra, soluciones a la problemática regional y nacional.\n" +
-                    "   g) El ejercicio de la docencia en la investigación y en el diálogo amplio.\n" +
-                    "   h) La ética en el desempeño integral de sus actividades personales, profesionales y pedagógicas.\n" +
-                    "   i) La actitud positiva y continua hacia su actualización científica, pedagógica y profesional.\n" +
-                    "   j) Su integración al proceso de conformación de la comunidad académica UNAB.\n");
+            list3.add("-No ser procedente la solicitud del estudiante para ingresar al Programa de Recuperación Académica debido a la imposibilidad del restablecimiento de su PGA a un rango que permita su continuidad en el programa al que pertenece.\n" +
+                    "-No aprobar satisfactoriamente el Programa de Recuperación Académica. \n" +
+                    "-Obtener por segunda vez un PGA inferior a (3.00).\n" +
+                    "-Ser sancionado disciplinariamente con pérdida inmediata y definitiva de la condición de estudiante UNAB.\n\n");
             listItem.put(listGroup.get(2), list3);
             //Pregunta4
             List<String> list4 = new ArrayList<>();
-            list4.add("A todo el profesorado de la UNAB, y también a profesores que asuman responsabilidades administrativas o académico-administrativas en la institución, o se encuentren en cumplimiento de una comisión. Automáticamente el docente al firmar el respectivo contrato declara conocerlo y acatarlo.\n");
+            list4.add("La solicitud de admisión por transferencia se realiza a través de la plataforma de admisiones de la institución, dentro de la fecha establecida en el cronograma académico, acompañada de los siguientes documentos:\n" +
+                    "-Certificado de calificaciones detalladas por curso emitido por la Institución de procedencia, así como el Promedio General Acumulado (PGA), igual o superior a (3.50). \n" +
+                    "-Certificado de competencias o contenidos programáticos de cada uno de los cursos cuya calificación sea igual o superior a (3.5)\n" +
+                    "-Recibo de pago del valor del estudio de homologación y equivalen\n" +
+                    "\n\n");
             listItem.put(listGroup.get(3), list4);
+            //Pregunta5
+            List<String> list5 = new ArrayList<>();
+            list5.add("-Los programas de procedencia cuenten con reconocimiento aprobado por el Ministerio de Educación Nacional Colombiano o de la autoridad competente del país de origen, acompañado de la respectiva certificación. \n" +
+                    "-Las actividades académicas cursadas en programas de la UNAB y aprobadas con una calificación final de (3.0) o superior.. \n" +
+                    "-Las actividades académicas cursadas en programas de otras instituciones y aprobadas con una calificación final de (3.5) o superior, o su equivalente; con excepción de lo establecido en convenios vigentes interinstitucionales. \n\n");
+            listItem.put(listGroup.get(4), list5);
+            //Pregunta6
+            List<String> list6 = new ArrayList<>();
+            list6.add("-Activo. Estudiante que cuenta con uno o más cursos matriculados durante un periodo académico. \n" +
+                    "-En reserva de cupo. Ha formalizado oportunamente la suspensión temporal de sus estudios. \n" +
+                    "-En reintegro. Tras haber suspendido sus estudios temporalmente, solicita formalmente continuar con los mismos. \n" +
+                    "-Desertor. No ha realizado matrícula en un período académico, ni formalización de reserva de cupo o retiro. \n" +
+                    "-En sanción disciplinaria. Se encuentra cumpliendo la suspensión de estudios por sanción disciplinaria.\n" +
+                    "-Inactivo. En los casos en que se presente una de las siguientes circunstancias: \n" +
+                    "  (i) Solicitud de transferencia interna, \n" +
+                    "  (ii) cuando habiendo sido admitido no se matricula ni solicita reserva de cupo dentro del siguiente año, \n" +
+                    "  (iii) cuando pierde su derecho de renovar matrícula por bajo rendimiento académico o sanción disciplinaria. \n" +
+                    "-g) Egresado. Ha cumplido con todos los requisitos establecidos en el currículo sin haber obtenido su título profesional. 16 \n" +
+                    "-h) Graduado. Cuando la Universidad ha expedido el título y suscrito el acta de grado correspondiente.\n" +
+                    "-i) Retirado. Ha formalizado su decisión voluntaria y definitiva de no continuar sus estudios en la Institución.\n\n");
+            listItem.put(listGroup.get(5), list6);
+            //Pregunta7
+            List<String> list7 = new ArrayList<>();
+            list7.add("-Normal: El estudiante con un PGA superior a (3.20). \n" +
+                    "-Condicional: El estudiante que en un periodo académico obtiene un PGA entre (3.00) y (3.20). \n" +
+                    "-En prueba académica: El estudiante que en un segundo periodo académico consecutivo obtiene un PGA entre (3.00) y (3.20); o el estudiante que obtiene en un periodo académico un PGA inferior a (3.00). \n" +
+                    "-Fuera del Programa: El estudiante que ha perdido el derecho de renovar su matrícula por bajo rendimiento académico.\n\n");
+            listItem.put(listGroup.get(6), list7);
+            //Pregunta8
+            List<String> list8 = new ArrayList<>();
+            list8.add("Es el conjunto de políticas, criterios y orientaciones para la formación de personas, consignadas en el Proyecto Educativo Institucional, que la Universidad aplica en la ejecución de sus propuestas educativas.  Comprende los planes de estudio y actividades académicas complementarias. \n");
+            listItem.put(listGroup.get(7), list8);
+            //Pregunta9
+            List<String> list9 = new ArrayList<>();
+            list9.add("Es un esquema estructurado de contenidos de conocimientos y habilidades organizados por componentes de formación, áreas, unidades de aprendizaje, con sus respectivas actividades académicas, requeridas para una titulación debidamente reconocida por las autoridades educativas competentes.\n");
+            listItem.put(listGroup.get(8), list9);
+            //Pregunta10
+            List<String> list10 = new ArrayList<>();
+            list10.add("Es cada una de las unidades y componentes del plan de estudios que se desarrollan en un programa y dan cabida a núcleos de aprendizaje integrados a las actividades curriculares para el logro de competencias de formación. \n");
+            listItem.put(listGroup.get(9), list10);
+            //Pregunta11
+            List<String> list11 = new ArrayList<>();
+            list11.add("Los créditos académicos son la unidad de medida del trabajo académico para expresar todas las actividades que hacen parte del plan de estudios que deben cumplir los estudiantes. Un crédito académico equivale a (48) horas de trabajo académico del estudiante\n");
+            listItem.put(listGroup.get(10), list11);
+            //Pregunta12
+            List<String> list12 = new ArrayList<>();
+            list12.add("Las pruebas escritas, orales o prácticas de naturaleza cuantitativa se calificarán con notas comprendidas entre (0.0) y (5.0) y serán asignadas y registradas en el sistema académico por los profesores, en unidades y décimas. La calificación aprobatoria mínima para todas las pruebas será de (3.0). La prueba no presentada será calificada con (0.0). \n");
+            listItem.put(listGroup.get(11), list12);
+            //Pregunta13
+            List<String> list13 = new ArrayList<>();
+            list13.add("Los promedios de Período Académico (PPA) y General Acumulado (PGA) se obtienen de multiplicar la calificación final obtenida en cada módulo o curso, por el número de créditos respectivos. La suma de estos resultados se divide entre el total de créditos cursados. \n");
+            listItem.put(listGroup.get(12), list13);
+            //Pregunta14
+            List<String> list14 = new ArrayList<>();
+            list14.add("Se presentarán una sola vez por módulo o curso, cuando en el período académico obtenga una calificación final igual o superior a (2.5) y haya sido definido por el programa como habilitable.\n");
+            listItem.put(listGroup.get(13), list14);
+            //Pregunta15
+            List<String> list15 = new ArrayList<>();
+            list15.add("-Complementar los conocimientos adquiridos durante la formación académica. \n" +
+                    "-Favorecer la adquisición de competencias útiles para el ejercicio profesional. \n" +
+                    "-Facilitar la vinculación con organizaciones sociales y empresariales. \n" +
+                    "-Fomentar la capacidad de emprendimiento. \n" +
+                    "-Validar contenidos, procesos y estrategias utilizados en el currículo mediante la investigación y la estrecha relación con el entorno. \n\n");
+            listItem.put(listGroup.get(14), list15);
+            //Pregunta16
+            List<String> list16 = new ArrayList<>();
+            list16.add("Se realiza mediante una propuesta escrita de investigación en la cual el estudiante evidencia su capacidad de creatividad, análisis y producción e integración de conocimientos en la solución de problemas específicos del contexto productivo y social.\n");
+            listItem.put(listGroup.get(15), list16);
+            //Pregunta17
+            List<String> list17 = new ArrayList<>();
+            list17.add("-Tener todas las calificaciones de sus actividades académicas registradas y aprobadas en la historia académica institucional. \n" +
+                    "-Acreditar el nivel de inglés exigido en el currículo y certificado por el Departamento de Lenguas de la UNAB o una prueba internacional avalada por el mismo. \n" +
+                    "-Haber cursado y aprobado las actividades del componente instrumental en Informática y Bienestar Universitario definido por la Universidad. \n" +
+                    "-Haber obtenido un Promedio General Acumulado igual o superior a (3.20) en el programa en que se solicita su titulación. \n" +
+                    "-Diligenciar y entregar la solicitud de grado en las fechas establecidas en el cronograma académico de grados. \n" +
+                    "-No estar siendo investigado dentro de un proceso disciplinario ni en cumplimiento de una sanción. \n" +
+                    "-Acreditar los documentos legales y académicos exigidos para la obtención del respectivo título. Los estudiantes extranjeros deberán presentar pasaporte vigente. \n" +
+                    "-Cumplir con los demás requisitos exigidos por cada programa.  \n" +
+                    "-Estar a Paz y Salvo por todo concepto con la Institución y cancelar los derechos de grado exigidos por la Universidad.\n" +
+                    "-Acreditar la presentación del Examen de Calidad de la Educación Superior establecido por el Estado colombiano.\n\n");
+            listItem.put(listGroup.get(16), list17);
         }
 
 //Titulo2

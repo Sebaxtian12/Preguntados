@@ -65,37 +65,20 @@ public class TitleFragment extends Fragment {
         preguntas1.add("¿Qué es un Docente UNAB y cuáles son sus características? (Definiciones y perfil del profesor UNAB)\n");
         preguntas1.add("¿A quién aplica este Reglamento y desde qué momento? (Campo de aplicación e integración a los contratos)\n");
 
-        preguntas2.add("¿Cómo se produce la vinculación a la Universidad Autónoma de Bucaramanga y cuáles son los requisitos de ingreso? (Requisitos generales de ingreso)\n");
-        preguntas2.add("¿Si pretendo ser profesor, pero no cuento con posgrado ni con los 2 años de experiencia, quedaría completamente descartado? (Parágrafo 1)\n");
-        preguntas2.add("¿Si pretendo ser profesor, pero no cuento con un título profesional, quedaría completamente descartado? (Parágrafo 2)\n");
-        preguntas2.add("¿Qué es la convocatoria y qué debo saber sobre ésta? (Proceso de selección - Convocatoria)\n");
-        preguntas2.add("¿Cuál es la finalidad del concurso de méritos y en qué consiste? (Concurso)\n");
-        preguntas2.add("¿Qué es un concurso desierto y que implica si se presenta? (Acta final del concurso)\n");
-        preguntas2.add("¿Cómo se clasifica el personal docente de la UNAB? (Dedicación)\n");
-        preguntas2.add("¿Qué es un profesor de planta?\n");
-        preguntas2.add("¿Qué es un profesor de cátedra?\n");
-        preguntas2.add("¿Qué es un profesor visitante?\n");
-        preguntas2.add("¿Qué es un profesor Ad-honorem?\n");
-        preguntas2.add("¿Qué es la asignación académica?\n");
-        preguntas2.add("¿Qué es el escalafón y cómo es su aplicación?\n");
-        preguntas2.add("¿Cuáles son las categorías docentes?\n");
-        preguntas2.add("¿Quién es un profesor auxiliar? (Requisitos específicos)\n");
-        preguntas2.add("¿Quién es un profesor asistente?\n");
-        preguntas2.add("¿Quién es un profesor asociado?\n");
-        preguntas2.add("¿Quién es un profesor titular?\n");
-        preguntas2.add("¿Cómo son los ascensos?\n");
-        preguntas2.add("¿Cuáles son las situaciones especiales del profesor de planta?\n");
+        preguntas2.add("Derechos de los estudiantes.\n");
+        preguntas2.add("Deberes de los estudiantes\n");
 
-        preguntas3.add("¿Cuáles son las responsabilidades del profesor?\n");
-        preguntas3.add("¿Cuáles son los derechos de los profesores?\n");
-        preguntas3.add("¿Cuáles son los deberes de los profesores?\n");
-        preguntas3.add("¿Existen estímulos para los profesores?\n");
-        preguntas3.add("¿Existen distinciones para los profesores?\n");
-        preguntas3.add("¿Qué inhabilita a un profesor de la UNAB?\n");
-        preguntas3.add("¿Hay incompatibilidades para ser profesor UNAB?\n");
-        preguntas3.add("¿Cuáles son las prohibiciones que tienen los profesores?\n");
+        preguntas3.add("Objetivos del acompañamiento académico\n");
+        preguntas3.add("Estímulos y distinciones\n");
+        preguntas3.add("Derechos derivados de las distinciones académicas\n");
 
-        preguntas4.add("¿Cómo se realiza el seguimiento y la evaluación del desempeño del profesorado?\n");
+        preguntas4.add("Faltas gravísimas\n");
+        preguntas4.add("Faltas graves\n");
+        preguntas4.add("Faltas leves\n");
+
+
+
+
 
         preguntas5.add("¿Cuales son las causas para iniciar un proceso disciplinario en contra de un docente?\n");
         preguntas5.add("¿Cuales son las faltas disciplinarias para un docente de la unab?\n");

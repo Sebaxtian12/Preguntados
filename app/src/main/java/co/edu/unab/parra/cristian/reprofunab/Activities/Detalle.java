@@ -120,171 +120,53 @@ public class Detalle extends AppCompatActivity {
         if (numero==2){
             //Pregunta1
             List<String> list1 = new ArrayList<>();
-            list1.add("Mediante concurso de méritos, donde el aspirante debe cumplir los siguientes requisitos:\n\n" +
-                    "   a) Poseer título universitario en la disciplina o profesión a la cual se vincula.\n" +
-                    "   b) Poseer título de posgrado en el campo o área en la que se vincula como docente.\n" +
-                    "   c) Demostrar mediante concurso de méritos las cualidades requeridas para el desempeño del cargo.\n" +
-                    "   d) Tener mínimo 2 años de experiencia profesional.\n" +
-                    "   e) Afinidad con los principios y valores de la UNAB declarados en el acta de constitución, en la misión y los estatutos de la Universidad.\n");
+            list1.add(
+                    "   a. Conocer el Proyecto Educativo Institucional\n" +
+                    "   b. Recibir la educación integral propuesta en el Proyecto Educativo Institucional y en los planes de estudio de cada programa.\n\n" +
+                    "   c. Acceder antes del inicio del periodo académico correspondiente a la guía de cátedra de cada uno de los cursos y durante su duración, al resultado de su evaluación académica y de su proceso formativo.\n" +
+                    "   d. Recibir de manera oportuna el resultado de su evaluación académica y tener efectivo acceso a los procesos de revisión y recalificación de evaluaciones, todo ello de acuerdo con el PEI y el presente reglamento.\n" +
+                    "   e. Exponer y discutir en libertad y en los espacios correspondientes las ideas, teorías, conocimientos, preferencias, reconociendo y respetando el pluralismo, la diversidad y la particularidad de las formas culturales.\n" +
+                    "   f. Usar adecuada y responsablemente los espacios y demás materiales e implementos educativos que la UNAB ofrece para el desarrollo de sus competencias y contribuir al buen funcionamiento y desarrollo de los servicios y recursos que ofrece la Universidad para su proceso formativo.\n" +
+                    "   g. Participar responsablemente en la evaluación de las actividades institucionales cuando sean convocados, lo que incorpora el proceso de evaluación del programa, de sus docentes y de los de registro calificado y acreditación de alta calidad. 35\n" +
+                    "   h. Elegir y ser elegido representante de los estudiantes en los organismos de dirección de la UNAB. \n" +
+                    "   i. Recibir estímulos que la Universidad defina como reconocimiento a su desempeño académico, deportivo, cultural y liderazgo estudiantil. \n" +
+                    "   j. Ser sujeto de respeto y reconocimiento de sus derechos materiales y/o morales derivados de los procesos de investigación y creatividad realizados dentro de su proceso formativo o fuera del mismo.\n" +
+                    "   k. Recibir información y participar en las convocatorias para becas, pasantías, programas de intercambio que instituciones de orden nacional e internacional ofrezcan a la UNAB. \n" +
+                    "   l. Representar a la Universidad en eventos académicos, científicos, artísticos, culturales o deportivos.\n" +
+                    "   m. Participar en los eventos académicos, culturales, recreativos y deportivos que programe la UNAB.\n" +
+                    "   n. Recibir copia del presente reglamento al inicio de su programa de formación.\n\n");
+
+
+
             listItem.put(listGroup.get(0), list1);
             //Pregunta2
             List<String> list2 = new ArrayList<>();
-            list2.add("La Rectoría y la Vicerrectoría Académica excepcionalmente, y de acuerdo con los intereses de la Universidad, podrá autorizar la vinculación de un Profesor de reconocidos méritos que no reúna los requisitos exonerar del cumplimiento de los literales b y d. \n");
+            list2.add("a. Cumplir las normas y reglamentos de la UNAB.\n" +
+                    "b. Conocer y cumplir los términos establecidos en el cronograma de actividades académicas, administrativas y financieras publicado en los medios institucionales. \n" +
+                    "c. Asistir a clase y demás actividades académicas programadas, de acuerdo con su matrícula dentro de un periodo académico, incluyendo las prácticas, salidas técnicas, pasantías, intercambios y las horas de estudio personal y su evaluación como parte de las actividades del proceso educativo en el aula o fuera de ella.\n" +
+                    "d. Asumir los compromisos académicos y financieros derivados de su matrícula.\n" +
+                    "e. Informarse de los resultados de su proceso académico en los medios de comunicación institucionales dispuestos para ello. \n" +
+                    "f. Abstenerse de utilizar el nombre, imagen y símbolos de la Universidad sin autorización o en forma indebida.\n" +
+                    "g. Guardar una conducta de respeto hacia el medio ambiente y todos los seres vivos y los derechos que les corresponden.\n" +
+                    "h. Respetar las normas sobre propiedad intelectual, deber que incluye la abstención de cualquier forma de plagio y hacer en los trabajos académicos la correcta citación de los autores consultados.\n" +
+                    "i. Guardar, en su vida académica y como miembro de la sociedad, un comportamiento ajustado a la ética ciudadana, al respeto hacia sí mismo y hacia los demás, a la tolerancia hacia la diversidad y al cumplimiento de la ley, sin perjuicio de la posibilidad de expresar su disenso en materias filosóficas, religiosas o políticas y de crear su propio conocimiento.\n" +
+                    "j. Velar por la seguridad personal y la de todos los miembros de la comunidad de la UNAB.\n" +
+                    "k. Portar el uniforme y/o los elementos de seguridad, cuando a ello haya lugar, y asumir el cumplimiento de las obligaciones de seguridad y prevención de accidentes, en el desarrollo de actividades curriculares y extracurriculares ya sea que se realicen dentro o fuera del entorno físico de la Universidad.\n" +
+                    "l. Mantener un trato respetuoso con los miembros de la comunidad académica o personal al servicio de la Institución. \n" +
+                    "m. Mantener el nivel académico exigido por la UNAB.\n" +
+                    "n. Participar en los procesos de evaluación institucional y de profesores.\n" +
+                    "o. Cuidar y mantener en buen estado las instalaciones de la UNAB, los bienes de uso de la comunidad universitaria y responder por los daños que ocasione. Este deber incorpora lo relacionado con el buen uso de laboratorios, libros, sistemas y cualquier otro equipo que la Universidad tenga a la disposición general o particular de los estudiantes como herramienta del proceso de aprendizaje.\n" +
+                    "p. Cumplir con las actividades institucionales en que sea incluido para beneficio de su formación.\n" +
+                    "q. Poner en conocimiento de la autoridad institucional competente la conducta de cualquier miembro de la UNAB que por acción, omisión o extralimitación atente contra la integridad de la comunidad universitaria o el normal desarrollo del proceso formativo.\n" +
+                    "r. Abstenerse de actuar dentro del campus universitario bajo el efecto de sustancias que alteren su comportamiento y pongan en riesgo la seguridad, la tranquilidad, la salubridad y el prestigio de la comunidad universitaria. \n" +
+                    "s. Asistir a los programas de acompañamiento académico y psicológico a los que sea remitido. \n" +
+                    "t. Usar debidamente el carné y demás distintivos que lo acreditan como estudiante UNAB. \n" +
+                    "u. Mantener los usuarios y contraseñas de acceso a los sistemas institucionales de manera confidencial e intransferible.\n" +
+                    "v. Usar el correo electrónico institucional como medio de comunicación con la institución para el cumplimiento de actividades académicas y/o administrativas, de acuerdo con lo establecido en los procesos.\n" +
+                    "w. Como miembro de la UNAB, usar de manera responsable y respetuosa las redes sociales. \n" +
+                    "x. Llevar en alto el nombre de la UNAB en actividades académicas, escenarios de práctica y pasantías nacionales e internacionales\n \n");
             listItem.put(listGroup.get(1), list2);
-            //Pregunta3
-            List<String> list3 = new ArrayList<>();
-            list3.add("La Rectoría y la Vicerrectoría Académica podrán exonerar del cumplimiento del literal a), a quien se desempeñe con suficiencia académica o a quienes demuestren que han hecho aportes significativos en el campo de las Bellas Artes, o en determinados aspectos de la técnica, las humanidades o la ciencia, etc. \n");
-            listItem.put(listGroup.get(2), list3);
-            //Pregunta4
-            List<String> list4 = new ArrayList<>();
-            list4.add("La convocatoria es el mecanismo por medio del cual se promueve la participación, en igualdad de condiciones, de los profesionales universitarios al concurso de méritos para ocupar las distintas plazas docentes que se encuentren vacantes. Para tal fin, el Decano de la respectiva Facultad, previa información a la Vicerrectoría Académica hará la convocatoria, que deberá realizarse mediante publicación interna o externa y en las fechas establecidas por la Universidad. La convocatoria para el concurso deberá contener por lo menos la siguiente información:\n\n" +
-                    "   a) Número y fecha de la convocatoria.\n" +
-                    "   b) Identificación de la plaza docente.\n" +
-                    "   c) Requisitos mínimos que deberán satisfacer los aspirantes.\n");
-            listItem.put(listGroup.get(3), list4);
-            //Pregunta5
-            List<String> list5 = new ArrayList<>();
-            list5.add("El concurso de méritos tiene como finalidad evaluar las calidades académicas y personales de los candidatos, apreciar la capacidad, idoneidad, aptitudes y potencialidades del aspirante. Las pruebas o instrumentos de selección se aplicarán en dos etapas: la primera de preselección y la posterior de selección. En la etapa de preselección, que deberá realizarse en  un  término no inferior a cinco (5) días a partir de su señalamiento, el Comité evaluará las cualidades del candidato mediante:\n\n" +
-                    "   a) El análisis de la hoja de vida.\n" +
-                    "   b) Los resultados de una prueba psicotécnica. \n" +
-                    "   c) Una entrevista con el Decano.\n" +
-                    "Practicadas las anteriores pruebas, el concursante tendrá una entrevista con un psicólogo designado por la Facultad de Psicología Organizacional de la Universidad. Cada uno de los instrumentos de evaluación en esta etapa tendrá un puntaje que, sumado, deberá dar un porcentaje máximo de 100 y un mínimo de 70 para poder pasar a la segunda etapa del concurso.\n\n" +
-                    "En el evento de que un concursante sea eliminado en esta etapa, por haber obtenido un puntaje inferior a 70, en el acta que elabore el Comité deberá dejar consignados de manera clara, cada uno de los puntajes y los fundamentos de tal decisión.\n" +
-                    "Los candidatos que cumplan con el perfil establecido en el artículo anterior, pasarán a la segunda etapa del proceso que consiste en una de las siguientes pruebas: \n\n" +
-                    "   a) Presentación por escrito y sustentación oral ante el Comité de una disertación académica sobre un tema establecido con anticipación no inferior a cinco(5)  días,  por el mismo Comité y referido al campo del conocimiento para el cual se requiere el profesor, en el contexto curricular establecido por el Proyecto Educativo Institucional.\n" +
-                    "   b) Formulación de una propuesta de investigación, para la cual contará con diez (10) días contados a partir de la respectiva comunicación.\n" +
-                    "   c) Exposición de un tema ante un grupo de profesores y de estudiantes, en la forma que lo determine el Comité. \n" +
-                    "El puntaje máximo de esta evaluación será de 100 y un mínimo de 70 puntos, los que serán sumados a los obtenidos en la anterior etapa, en orden a establecer los puntajes de mayor a menor, obtenidos por los distintos concursantes cuando hubieren sido varios.\n" +
-                    "Finalmente se elaborará el acta final del concurso por el comité que contendrá:\n\n" +
-                    "   a) Número, fecha y cargo del docente.\n" +
-                    "   b) Nombre de las personas inscritas, donde se señalan las que hubieren pasado a concurso y anotando las razones por las cuales fueron rechazados los otros aspirantes.\n" +
-                    "   c) Puntajes obtenidos en cada prueba por quienes aprobaron.\n" +
-                    "   d) Orden del resultado final obtenido por los participantes en el concurso de méritos.\n" +
-                    "   e) Decisión y firma del acta por los integrantes del comité de selección.\n" +
-                    "   f) Concluido el anterior procedimiento, el comité solicitará al Rector el nombramiento del  candidato o candidatos que hubieren ganado el concurso. La información académica relacionada en el concurso conformará una base de datos que estará a cargo de la Vicerrectoría Académica.\n\n");
-            listItem.put(listGroup.get(4), list5);
-            //Pregunta6
-            List<String> list6 = new ArrayList<>();
-            list6.add("El comité de selección puede declarar desierto el concurso cuando a su juicio los aspirantes no reúnen los requisitos exigidos en la convocatoria, o cuando no se hubiere inscrito ningún aspirante o cuando ninguno de ellos hubiere superado la totalidad de las pruebas.\n" +
-                    "Declarado desierto el concurso, se hará una nueva convocatoria con los mismo parámetros señalados en los artículos precedentes. Si en esta segunda oportunidad se declara desierto el concurso, el Rector procederá a nombrar el candidato que más convenga a los intereses de la Universidad.\n");
-            listItem.put(listGroup.get(5), list6);
-            //Pregunta7
-            List<String> list7 = new ArrayList<>();
-            list7.add("De acuerdo con su vinculación y dedicación académica, el personal docente de la Universidad se clasifica como: \n\n" +
-                    "   a) Profesor de Planta.\n" +
-                    "   b) Profesor de Cátedra.\n" +
-                    "   c) Profesor Visitante.\n" +
-                    "   d) Profesor Ad-Honorem.\n");
-            listItem.put(listGroup.get(6), list7);
-            //Pregunta8
-            List<String> list8 = new ArrayList<>();
-            list8.add("Son quienes se encuentran vinculados mediante contrato de trabajo, y de acuerdo con la dedicación académica pueden ser: \n\n" +
-                    "   a) De tiempo completo con una dedicación a la Universidad de cuarenta horas semanales.\n" +
-                    "   b) De tiempo parcial, con una dedicación a la Universidad de treinta horas semanales.\n" +
-                    "   c) De medio tiempo, con una dedicación a la Universidad de veinte horas semanales.\n");
-            listItem.put(listGroup.get(7), list8);
-            //Pregunta9
-            List<String> list9 = new ArrayList<>();
-            list9.add("Son quienes se encuentran vinculados mediante contrato de prestación de servicios. Durante el tiempo contratado su carga académica se distribuirá en:\n\n" +
-                    "   a) Docencia directa.\n" +
-                    "   b) Labores de coordinación.\n" +
-                    "   c) Evaluación de dicha actividad. \n");
-            listItem.put(listGroup.get(8), list9);
-            //Pregunta10
-            List<String> list10 = new ArrayList<>();
-            list10.add(" Aquel que se encuentra vinculado a otra institución pero la Universidad considera vincularlo de manera transitoria, con una finalidad y un período específicos. Su vinculación se hará mediante contrato de prestación de servicios de carácter civil.\n");
-            listItem.put(listGroup.get(9), list10);
-            //Pregunta11
-            List<String> list11 = new ArrayList<>();
-            list11.add("Aquel que asume responsabilidades académicas pero que voluntariamente no recibe remuneración. Su vinculación se efectuará mediante resolución de Rectoría y su ubicación en el escalafón docente se hará de conformidad con su hoja de vida profesional y académica.\n");
-            listItem.put(listGroup.get(10), list11);
-            //Pregunta12
-            List<String> list12 = new ArrayList<>();
-            list12.add("Se define como la distribución de la actividad docente del profesor de acuerdo a su categoría dentro del escalafón. La asignación académica de cada profesor se debe ajustar de acuerdo al programa y período académico. Está integrada por:\n\n" +
-                    "   a) Docencia directa: Horas semanales de un docente para impartir clase asignadas por la facultad a la que pertenece.\n" +
-                    "   b) Preparación de clases: Tiempo de planeación de las asignaturas asignadas al docente.\n" +
-                    "   c) Corrección de pruebas: Tiempo de evaluación y corrección de pruebas realizadas durante el periodo académico. \n" +
-                    "   d) Atención a estudiantes: Tiempo que ofrece un docente para aclarar y orientar a los estudiantes que cursen las asignaturas que imparte.\n" +
-                    "   e) Labores administrativas: Tiempo que emplea un docente en labores de apoyo a la institución.\n" +
-                    "   f) Actividades de investigación: Tiempo utilizado por profesores de planta en la ejecución de labores investigativas debidamente aprobadas por el Comité Central de Investigaciones.\n" +
-                    "   g) Coordinación: Tiempo utilizado por el docente en actividades de coordinación impuestas por la respectiva facultad.\n" +
-                    "   h) Seminarios disciplinarios y de área: Actividades institucionales por parte de los profesores de una facultad y están centradas en evaluar el plan de estudio con el fin de mejorar la calidad de la educación.\n");
-            listItem.put(listGroup.get(11), list12);
-            //Pregunta13
-            List<String> list13 = new ArrayList<>();
-            list13.add("Conjunto ordenado y jerárquico de categorías que se establecen para clasificar a los profesores de acuerdo a:\n\n" +
-                    "   a) Títulos universitarios, tanto de pregrado como posgrado en las áreas afines.\n" +
-                    "   b) Experiencia en el campo, es decir, debe haber tenido desempeño en áreas afines.\n" +
-                    "   c) Producción intelectual como escritos científicos, literarios y humanísticos. Para ascender en el escalafón es requisito la producción intelectual.\n" +
-                    "   d) Antigüedad en cada una de las categorías docentes y tiempo de vinculación.\n" +
-                    "   e) El escalafón y sus diferentes categorías rigen para todas las modalidades de vinculación de un profesor. Los criterios de ingreso, permanencia, ascenso y retiro se aplican por igual a todas las modalidades.\n");
-            listItem.put(listGroup.get(12), list13);
-            //Pregunta14
-            List<String> list14 = new ArrayList<>();
-            list14.add("Los docentes de la UNAB estarán categorizados como:\n\n" +
-                    "   a) Profesor auxiliar (categoría inicial para todos los docentes recién ingresados).\n" +
-                    "   b) Profesor asistente.\n" +
-                    "   c) Profesor asociado.\n" +
-                    "   d) Profesor titular (ningún profesor podrá ingresar a la UNAB en esta categoría).\n" +
-                    "   e) A los profesores que se vinculen a la Universidad provenientes de otras instituciones de educación superior de características similares a la UNAB, se les respetará la clasificación que acrediten en el respectivo escalafón docente.\n" +
-                    "A los profesores que se vinculen a la Universidad provenientes de otras instituciones de educación superior de características similares a la UNAB, se les respetará la clasificación que acrediten en el respectivo escalafón docente.\n");
-            listItem.put(listGroup.get(13), list14);
-            //Pregunta15
-            List<String> list15 = new ArrayList<>();
-            list15.add("Básicamente cualquier profesor que cumpla con los requisitos para lograr ser un docente UNAB.\n");
-            listItem.put(listGroup.get(14), list15);
-            //Pregunta16
-            List<String> list16 = new ArrayList<>();
-            list16.add("Aquel profesor que haya sido profesor auxiliar por un periodo de dos años, adicionalmente se requiere:\n\n" +
-                    "   a) Poseer título de posgrado en el área que trabaje como docente.\n" +
-                    "   b) Evaluación satisfactoria como profesor auxiliar.\n" +
-                    "   c) Haber cumplido con los requerimientos del programa de perfeccionamiento docente de la UNAB.\n" +
-                    "   d) Acreditar en este periodo cursos de perfeccionamiento en su disciplina no inferior a 80 horas de intensidad.\n" +
-                    "   e) Acreditar 2 publicaciones como producción intelectual en revistas UNAB o en otras reconocidas nacionalmente.\n" +
-                    "   f) Acreditar ante la institución conocimientos básicos en un idioma extranjero.\n" +
-                    "   g) Acreditar el nivel básico en informática.\n");
-            listItem.put(listGroup.get(15), list16);
-            //Pregunta17
-            List<String> list17 = new ArrayList<>();
-            list17.add("Aquel profesor que haya sido profesor asistente por un periodo de tres años, adicionalmente se requiere:\n\n" +
-                    "   a) Acreditar título universitario.\n" +
-                    "   b) Evaluación satisfactoria como profesor asistente.\n" +
-                    "   c) Acreditar una maestría en su campo de desempeño académico.\n" +
-                    "   d) Haber realizado un posgrado en educación.\n" +
-                    "   e) Acreditar que durante el lapso que fue profesor asistente adelantó cursos de perfeccionamiento en su disciplina científica con una intensidad no menor a 80 horas\n" +
-                    "   f) Haber entregado el informe final de un trabajo de investigación en el cual haya sido director, coinvestigador o investigador principal, ó también haber publicado un  texto  en el campo de la ciencia en la cual realiza su ejercicio docente.\n" +
-                    "   g) Acreditar ante la institución el conocimiento de un idioma extranjero.\n");
-            listItem.put(listGroup.get(16), list17);
-            //Pregunta18
-            List<String> list18 = new ArrayList<>();
-            list18.add("Aquel profesor que haya sido profesor asociado por un periodo de cuatro años, adicionalmente se requiere:\n\n" +
-                    "   a) Acreditar evaluación satisfactoria como profesor asociado.\n" +
-                    "   b) Haber desarrollado o estar adelantando en calidad de investigador principal, un trabajo de investigación inscrito en la institución.\n" +
-                    "   c) Tener al menos 2 publicaciones de carácter científico en revistas UNAB o en otras reconocidas nacional o internacionalmente.\n" +
-                    "   d) Acreditar un posgrado en el nivel de doctorado u otra maestría.\n");
-            listItem.put(listGroup.get(17), list18);
-            //Pregunta19
-            List<String> list19 = new ArrayList<>();
-            list19.add("La solicitud de ascenso se debe presentar a la decanatura de la facultad en el mes de septiembre. El decano verificará el cumplimiento de los requisitos y la remitirá a la Rectoría y Vicerrectoría académica para su análisis y su posterior aprobación o improbación del ascenso. El ascenso regirá en el escalafón a partir del primero de enero del año siguiente\n");
-            listItem.put(listGroup.get(18), list19);
-            //Pregunta20
-            List<String> list20 = new ArrayList<>();
-            list20.add("Existen distintas situaciones especiales relacionadas al profesor de planta:\n\n" +
-                    "   a) Encargado de funciones diferentes a su cargo contratado, el profesor de planta puede ejercer funciones como encargado por decisión de la autoridad universitaria competente de manera transitoria.\n" +
-                    "   b) Licencia por enfermedad o maternidad de acuerdo a la ley, el profesor puede solicitar por escrito la licencia ordinaria por un periodo superior a 3 días. Al vencerse la licencia, el docente debe retomar sus funciones; de no hacerlo se puede dar por terminado su contrato.\n" +
-                    "   c) En permiso por razones de fuerza mayor o fortuita y no mayor a 3 días. El profesor debe solicitar el permiso al decano de la facultad o director del programa.\n" +
-                    "   d) En comisión de servicios, estudios y representación de la institución en eventos especiales. La comisión puede ser:\n\n" +
-                    "       I) Servicios, cuando el profesor ejerce sus funciones en un sitio distinto de la institución.\n" +
-                    "       II) Estudios, cuando el profesor se encuentre en sus estudios de capacitación o posgrado.\n" +
-                    "       III) Eventos especiales, cuando el profesor asiste en representación de la institución a foros, conferencias.\n" +
-                    "   e) Vacaciones dentro del lapso dado por la institución.\n" +
-                    "   f) Retiro, la desvinculación del docente de la UNAB implica la cesación en el ejercicio de todas sus funciones y se produce por:\n\n" +
-                    "       I) Renuncia, en este caso el docente debe presentar a rectoría, decano de la facultad y al departamento de personal una carta explicando las razones para terminar de manera prematura el contrato, con un tiempo no inferior a treinta días antes de la separación del cargo.\n" +
-                    "       II) Acuerdo mutuo.\n" +
-                "           III) Vencimiento del término del contrato.\n" +
-                    "       IV) Unilateralmente.\n" +
-                    "Cuando al momento de presentar la renuncia existan compromisos entre la Universidad y el profesor, derivados de una comisión de estudios, una beca-crédito o cualquier otra modalidad bajo la cual el profesor haya recibido soporte o financiación por parte de la Universidad, directa o indirectamente éste deberá pagar a la Universidad el valor que corresponde conforme a los términos del contrato.\n");
-            listItem.put(listGroup.get(19), list20);
+
         }
 
 //Titulo3

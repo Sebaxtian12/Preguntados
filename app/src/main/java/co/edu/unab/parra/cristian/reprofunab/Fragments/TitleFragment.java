@@ -105,11 +105,11 @@ public class TitleFragment extends Fragment {
         preguntas5.add("¿Cuales son los pasos a seguir para un procedimiento disciplinario?\n");
 
 
-        elementos.add(new TitleModel(R.drawable.titulo01, "1","Titulo 1" , "Definiciones, campo de aplicación, integración a los contratos",preguntas1));
-        elementos.add(new TitleModel(R.drawable.titulo02, "2","Titulo 2" , "Perfil, selección,vinculación, categoria docentes, promoción y situaciones administrativas",preguntas2));
-        elementos.add(new TitleModel(R.drawable.titulo03, "3","Titulo 3" , "Responsabilidades, derechos, prohibiciones, deberes, estimulos y distinciones, inhabilidades e incompatibilidades",preguntas3));
-        elementos.add(new TitleModel(R.drawable.titulo04, "4","Titulo 4", "Seguimiento y evaluación del desempeño del profesor.", preguntas4));
-        elementos.add(new TitleModel(R.drawable.titulo05, "5","Titulo 5" , "Regimen disciplinario: principios generales, faltas disciplinarias, procedimiento disciplinario y la gradación de sanciones",preguntas5));
+        elementos.add(new TitleModel(R.drawable.titulo01, "1","Titulo 1" , "De las normas generales que rigen el funcionamiento académico",preguntas1));
+        elementos.add(new TitleModel(R.drawable.titulo02, "2","Titulo 2" , "Derechos y deberes de los estudiantes",preguntas2));
+        elementos.add(new TitleModel(R.drawable.titulo03, "3","Titulo 3" , "De las normas generales que regulan el acompañamiento y apoyo académico",preguntas3));
+        elementos.add(new TitleModel(R.drawable.titulo04, "4","Titulo 4", "Del Régimen Disciplinario", preguntas4));
+        elementos.add(new TitleModel(R.drawable.titulo05, "5","Titulo 5" , "Disposiciones generales y vigencia",preguntas5));
 
     }
 

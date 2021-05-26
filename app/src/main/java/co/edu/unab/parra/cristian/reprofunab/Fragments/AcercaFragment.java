@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,14 +19,21 @@ public class AcercaFragment extends Fragment {
 
     private AcercaModel mViewModel;
 
+    private Button _btn_link;
+    String _url = "https://docs.google.com/forms/d/e/1FAIpQLSd3fou92K3rLtBTDfZ8rzy5F6mo2kVVk2rJ1-kK_X2XDiwLCw/viewform?usp=sf_link";
+
+
     public static AcercaFragment newInstance() {
         return new AcercaFragment();
     }
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_acerca, container, false);
+
+
     }
 
     @Override
@@ -32,6 +41,9 @@ public class AcercaFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(AcercaModel.class);
         // TODO: Use the ViewModel
+
+
     }
+
 
 }

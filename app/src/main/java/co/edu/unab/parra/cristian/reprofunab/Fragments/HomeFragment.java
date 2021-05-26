@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import co.edu.unab.parra.cristian.reprofunab.Activities.NavigationDrawerActivity;
+import co.edu.unab.parra.cristian.reprofunab.Model.AcercaModel;
 import co.edu.unab.parra.cristian.reprofunab.Model.HomeViewModel;
 import co.edu.unab.parra.cristian.reprofunab.R;
 
@@ -19,6 +21,7 @@ import androidx.lifecycle.ViewModelProvider;
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -36,5 +39,6 @@ public class HomeFragment extends Fragment {
             }
         });
         return root;
+
     }
 }

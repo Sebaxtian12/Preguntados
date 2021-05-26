@@ -29,6 +29,7 @@ public class ConfigFragment extends PreferenceFragmentCompat {
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 
+
         View view = super.onCreateView(inflater, container, savedInstanceState);
         //read settings value from shared preferences
         SharedPreferences sharedPreferences = PreferenceManager

@@ -326,58 +326,48 @@ public class DetalleActivity extends AppCompatActivity {
         if (numero==5){
             //Pregunta1
             List<String> list1 = new ArrayList<>();
-            list1.add("Por acción disciplinaria se entiende la facultad de que está dotada la Universidad para investigar, y sancionar a los responsables de hechos violatorios del presente reglamento. En cada proceso disciplinario se garantizará al profesor el derecho a su defensa, para lo cual podrá presentar descargos, y solicitar la práctica de pruebas conducentes. \n" +
-                    "Las siguientes acciones dan a lugar un proceso disciplinario: \n\n" +
-                    "   a) Incumplimiento de los deberes del docente.\n" +
-                    "   b) Incompatibilidades.\n" +
-                    "   c) Inhabilidades previstas en este reglamento y las establecidas en la constitución o ley nacional. \n");
+            list1.add("-Expulsión de la Universidad que significa la pérdida inmediata y definitiva de su condición de estudiante de la UNAB, y tiene como consecuencia la pérdida del derecho a matricularse en cualquiera de sus programas académicos y la imposibilidad de obtener el grado.\n" +
+                    "-Suspensión inmediata de estudios de tres (3) a cuatro (4) períodos académicos regulares consecutivos. En el evento de que el estudiante haya finalizado sus estudios o tenga la condición de egresado se tendrán en cuenta las previsiones contenidas en el art. 105 del presente reglamento, en lo pertinente.\n" +
+                    "-Revocatoria del título académico otorgado para cuya aplicación la universidad deberá iniciar las acciones legales para obtener una decisión en tal sentido.\n");
             listItem.put(listGroup.get(0), list1);
             //Pregunta2
             List<String> list2 = new ArrayList<>();
-            list2.add(" a) Practicar evaluaciones no coherentes con el proceso ético formativo que el profesor desarrolle en su clase.\n" +
-                    "   b) Faltas de puntualidad sin excusa válida a clases, talleres y seminarios.\n" +
-                    "   c) No asistir sin excusa válida a reuniones de coordinación.\n" +
-                    "   d) No colaborar en las actividades académicas de la Universidad.\n" +
-                    "   e) No entregar notas de calificación dentro de los límites establecidos por el cronograma académico.\n" +
-                    "   f) No acatar las instrucciones u órdenes dadas por las autoridades administrativas y académicas de la Universidad, cuando su carácter no constituya falta grave.\n" +
-                    "   g) No atender las instrucciones y sugerencias derivadas de las evaluaciones docentes.\n" +
-                    "   h) No desarrollar el currículum de la asignatura de acuerdo con la temática del plan de estudios.\n" +
-                    "   i) Cualquier alusión o referencia pública o privada injustificada, respecto de un resultado evaluativo negativo para los alumnos.\n");
+            list2.add("a. Suspensión inmediata de estudios hasta por dos (2) períodos académicos regulares consecutivos. En el evento en que el estudiante ya haya finalizado el plan de estudios se tendrá en cuenta lo dispuesto en el art. 105, del presente reglamento, en lo pertinente.\n" +
+                    "b. Calificación de cero, cero (0.0) en el curso.\n" +
+                    "c. Calificación de cero, cero (0.0) en la prueba\n\n");
             listItem.put(listGroup.get(1), list2);
             //Pregunta3
             List<String> list3 = new ArrayList<>();
-            list3.add(" a) Llamado de atención privada, por citación a la oficina del Decano.\n" +
-                    "   b) Llamado de atención escrita por el Decano. \n");
+            list3.add("a. Amonestación verbal con compromiso firmado por el estudiante y sin anotación en la hoja de vida.\n" +
+                    "b. Amonestación privada acompañada de un compromiso firmado por el estudiante con copia a la hoja de vida\n\n");
             listItem.put(listGroup.get(2), list3);
             //Pregunta4
             List<String> list4 = new ArrayList<>();
-            list4.add("Si el docente incurre en alguna de las faltas mencionadas previamente, esto dará pie para la cancelación de su contrato, ya sea laboral o de prestación de servicios. \n");
+            list4.add("1. La identidad del posible autor o autores.\n" +
+                    "2. La relación de los hechos conocidos que dieron lugar a la apertura de la investigación, la posibilidad de que sean constitutivos de falta disciplinable.\n" +
+                    "3. La relación de las pruebas en que se sustentan dichos hechos y la de aquellas cuya práctica se ordena.\n\n");
             listItem.put(listGroup.get(3), list4);
             //Pregunta5
             List<String> list5 = new ArrayList<>();
-            list5.add("   a) El derecho del profesor a conocer el informe y las pruebas que se alleguen para el análisis del caso.\n" +
-                    "   b) El derecho del profesor a ser oído en descargos y a solicitar la práctica de las pruebas que considere necesarias.\n" +
-                    "   c) El derecho del profesor a estar asesorado y representado.\n");
+            list5.add("1. Identificación del estudiante.\n" +
+                    "2. Actuaciones surtidas en el término de investigación.\n" +
+                    "3. La descripción de la conducta investigada indicando las circunstancias de tiempo, modo y lugar de su ocurrencia.\n" +
+                    "4. Las disposiciones que se consideren eventualmente vulneradas.\n" +
+                    "5. Análisis o valoración de la prueba para cada uno de los cargos.\n" +
+                    "6. Falta(s) disciplinaria(s) que se considera(n) configurada(s) enunciando las posibles sanciones que correspondan a éstas.\n" +
+                    "7. Respuesta a los argumentos expuestos por el estudiante, en el evento de que los hubiere hecho conocer con antelación.\n\n");
             listItem.put(listGroup.get(4), list5);
-            //Pregunta5
+            //Pregunta6
             List<String> list6 = new ArrayList<>();
-            list6.add(" a) Conocida la queja, o el hecho, la Universidad se documentará acerca de lo ocurrido.\n" +
-                    "   b) Si de la documentación examinada se concluye que existe falta disciplinaria se citará al profesor a audiencia de descargos ante el Decano respectivo, y concluida ésta se practicarán las pruebas conducentes por él solicitadas; el Decano estudiará y decidirá aplicando la sanción, si a ésta hubiere lugar.\n" +
-                    "   c) La decisión del Decano es apelable ante la Vicerrectoría Académica dentro de los tres (3) días hábiles siguientes a la notificación personal de la sanción, de que se avisará al profesor a su dirección registrada en la Oficina de Personal de la Universidad.\n" +
-                    "   d) Las sanciones disciplinarias no son acumulables. Tanto la sanción como su apelación se decidirán mediante resolución motivada, la cual se le entregará una copia al profesor, dejando otra agregada a su hoja de vida.\n");
+            list6.add("1. Resumen de los hechos indicando las circunstancias de tiempo, modo y lugar de su ocurrencia.\n" +
+                    "2. Análisis de las pruebas en que se basa la decisión\n" +
+                    "3. Análisis de la versión rendida por el estudiante, si la hubo.\n" +
+                    "4. Calificación de la falta y análisis de la culpabilidad del estudiante.\n" +
+                    "5. Graduación de la sanción.\n" +
+                    "6. Parte resolutiva que contiene la decisión adoptada que, según el caso y con sustento en los análisis de que se da cuenta en este artículo, podrá ser absolutoria o sancionadora.\n\n");
             listItem.put(listGroup.get(5), list6);
         }
 
-//Titulo6
-
-        if (numero==6){
-            //Pregunta1
-            List<String> list1 = new ArrayList<>();
-            list1.add(" a) La Junta Directiva de la UNAB puede hacer modificaciones cuando hayan propuestas o proyectos conducentes presentados por el rector y el Vicerrector Académico.\n" +
-                    "   b) Bajo ninguna circunstancia este reglamento puede desmejorar la posición en el escalafón o el salario del profesor.\n" +
-                    "   c) Queda facultado únicamente el Rector para expedir resoluciones que fueren pertinentes.\n");
-            listItem.put(listGroup.get(0), list1);
-        }
 
 
         /*List<String> list1 = new ArrayList<>();

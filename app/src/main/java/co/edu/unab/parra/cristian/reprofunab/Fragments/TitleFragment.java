@@ -90,15 +90,12 @@ public class TitleFragment extends Fragment {
         preguntas4.add("Faltas leves\n");
 
 
-
-
-
-        preguntas5.add("¿Cuales son las causas para iniciar un proceso disciplinario en contra de un docente?\n");
-        preguntas5.add("¿Cuales son las faltas disciplinarias para un docente de la unab?\n");
-        preguntas5.add("¿Cuales son las sanciones por faltas disciplinarias?\n");
-        preguntas5.add("¿Cual es la consecuencia de incurrir en las prohibiciones, inhabilidades e incompatibilidades señaladas en este Reglamento?\n");
-        preguntas5.add("Normatividad llevada a cabo en un procedimiento disciplinario\n");
-        preguntas5.add("¿Cuales son los pasos a seguir para un procedimiento disciplinario?\n");
+        preguntas5.add("Tipos de sanción para falta gravísima:\n");
+        preguntas5.add("Para falta grave\n");
+        preguntas5.add("Para falta leve:\n");
+        preguntas5.add("Los Requisitos mínimos que dispone la apertura de la investigación deberá contener:\n\n");
+        preguntas5.add("Los requisitos formales del pliego de cargos. El pliego de cargos deberá contener como mínimo:\n\n");
+        preguntas5.add(". De la audiencia de fallo . Si existe mérito disciplinario, se procederá a proferir fallo motivado que contendrá:\n");
 
 
         elementos.add(new TitleModel(R.drawable.titulo01, "1","Titulo 1" , "De las normas generales que rigen el funcionamiento académico",preguntas1));
